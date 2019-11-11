@@ -1,0 +1,146 @@
+* {
+  box-sizing:border-box;
+}
+body {
+  background:url("../images/real.png");
+}
+.container {
+  width:80%;
+  margin:0 auto;
+}
+.row::after {
+  content:"";
+  clear:both;
+  display:table;
+}
+[class*="col-"] {
+  float:left;
+  padding:15px;
+}
+.header {
+  padding:15px;
+  img {
+    width:150px;
+    height:150px;
+    padding:20px;
+  }
+  .moto {
+    display:inline-block;
+    vertical-align:top;
+    color:white;
+  }
+}
+ul {
+  list-style-type:none;
+  margin:-20px;
+  padding:5px;
+  li {
+    float:left;
+    width:20%;
+    text-align:center;
+    height:40px;
+    font-size:35px;
+    background-color:#202529;
+    a {
+      display:block;
+      text-decoration:none;
+      color:white;
+    }
+    a:hover {
+      background-color:#9dc02e;
+    }
+  }
+}
+.centralniSadrzaj {
+  padding:15px;
+  margin-top:30px;
+  background-color:#b2b581;
+  color:white;
+}
+.leviSidebar {
+  vertical-align:top;
+  width:15%;
+  display:inline-block;
+}
+.responsive {
+  width:100%;
+  height:auto;
+}
+.desniSidebar {
+  vertical-align:top;
+  display:inline-block;
+  width:30%;
+}
+.centralniDeo {
+  width:65%;
+  display:inline-block;
+  .proizvod {
+    width:30%;
+    display:inline-block;
+    background-color:#aeb364;
+    margin:5px;
+    padding:5px;
+  }
+}
+.centralniDeo1 {
+  width:90%;
+  display:inline-block;
+  img {
+    width:200px;
+    height:150px;
+  }
+}
+.korpa {
+  background-image:url(../images/korpa3.png);
+  background-color:transparent;
+  background-repeat:no-repeat;
+  border:none;
+  cursor:pointer;
+  height:32px;
+  width:100%;
+  padding-left:32px;
+}
+.footer {
+  text-align:center;
+  height:40px;
+  font-size:20px;
+  padding:10px;
+  background-color:#202529;
+  color:white;
+}
+.hamburger {
+  width:50px;
+  height:50px;
+  background-color:red;
+  padding:10px;
+  display:none;
+  .line {
+    width:35px;
+    width:80%;
+    margin-left:5px;
+    margin-top:5px;
+    background-color:white;
+    height:5px;
+  }
+}
+input[type=text], select, textarea {
+  width:100%;
+  padding:12px;
+  border:1px solid #cccccc;
+  border-radius:4px;
+  box-sizing:border-box;
+  margin-top:6px;
+  margin-bottom:16px;
+  resize:vertical;
+}
+input[type=submit] {
+  background-color:#4caf50;
+  color:white;
+  padding:12px 20px;
+  border:none;
+  border-radius:4px;
+  cursor:pointer;
+  :hover {
+    background-color:#45a049;
+  }
+}
